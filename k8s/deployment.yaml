@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: chpasswd
+  name: chpasswd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chpasswd
+  template:
+    metadata:
+      labels:
+        app: chpasswd
+    spec:
+      containers:
+        - image: image-registry.openshift-image-registry.svc:5000/chpasswd/chpasswd:latest
+          imagePullPolicy: Always
+          name: chpasswd
+          ports:
+            - containerPort: 8080
+              protocol: TCP
