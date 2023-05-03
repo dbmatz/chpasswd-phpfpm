@@ -1,0 +1,40 @@
+input:focus { 
+    background-color: #eee; 
+}
+
+th { 
+    padding: 0.8em; 
+}
+
+#container { 
+    text-align: center; 
+    width: 500px; 
+    margin: 5% auto;
+    border-radius: 1rem;
+}
+
+.alert-primary { 
+    text-align: center; 
+    width: 500px; 
+    margin: 5% auto; 
+}
+
+ul { 
+    text-align: left; 
+}
+
+.msg { 
+    margin: 1rem;
+    height: 5px;
+    width: auto;
+}
+
+.msg div{
+    padding: 5px;
+    padding-left: 8px;
+    height: 2.5rem;
+}
+
+.alert-primary{
+    height: auto;
+}
