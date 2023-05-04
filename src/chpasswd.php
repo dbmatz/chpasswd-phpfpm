@@ -133,7 +133,7 @@
   }
 
   function logs($username, $error){
-    date_default_timezone_set('America/Sao_Paulo');
+    /*date_default_timezone_set('America/Sao_Paulo');
     $date = date('Y-m-d H:i:s');
 
     $ip = $_SERVER['REMOTE_ADDR'];
@@ -145,7 +145,7 @@
     fwrite($open, $mensagem);
     fclose($open);
 
-    file_put_contents("php://stderr", "$mensagem\n");
+    file_put_contents("php://stderr", "$mensagem\n");*/
 
     return 0;
   }
