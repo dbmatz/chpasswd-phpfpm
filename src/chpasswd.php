@@ -141,8 +141,6 @@
     $arquivo = "./logChpasswd.txt";
     $mensagem = "$date: $ip: $username: $error\n";
 
-    print_r($mensagem);
-
     $open = fopen($arquivo, 'a');
     fwrite($open, $mensagem);
     fclose($open);
