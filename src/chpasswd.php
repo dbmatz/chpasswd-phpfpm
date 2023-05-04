@@ -145,13 +145,8 @@
     fwrite($open, $mensagem);
     fclose($open);
 
-    $stderr = fopen('php://stderr', 'w');
-    fwrite($stderr, $mensagem);
-    fclose($stderr);
-
-    $stdout = fopen('php://stdout', 'w');
-    fwrite($stdout, $mensagem);
-    fclose($stdout);
+    file_put_contents("php://stderr", "$mensagem\n");
+    file_put_contents("php://stdout", "$mensagem\n");
 
     return 0;
   }
