@@ -138,7 +138,7 @@
 
     $ip = $_SERVER['REMOTE_ADDR'];
 
-    $arquivo = "./logChpasswd.txt";
+    $arquivo = "logChpasswd.txt";
     $mensagem = "$date: $ip: $username: $error\n";
 
     $open = fopen($arquivo, 'a');
