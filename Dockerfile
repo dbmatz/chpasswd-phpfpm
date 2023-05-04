@@ -10,7 +10,7 @@ RUN echo "TLS_REQCERT never" >> /etc/openldap/ldap.conf
 #COPY /conf/www.conf /etc/php-fpm.d/
 #COPY /conf/php.ini /etc/
 
-USER 1001
+USER 0
 
 ADD src .
 ADD media ./media
