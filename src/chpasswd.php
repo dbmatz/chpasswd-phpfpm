@@ -145,8 +145,7 @@
     fwrite($open, $mensagem);
     fclose($open);
 
-    /*file_put_contents("php://stderr", "$mensagem\n");
-    file_put_contents("php://stdout", "$mensagem\n");*/
+    file_put_contents("php://stderr", "$mensagem\n");
 
     return 0;
   }
