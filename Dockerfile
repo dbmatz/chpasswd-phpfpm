@@ -7,8 +7,8 @@ USER 0
 RUN echo "TLS_REQCERT never" >> /etc/openldap/ldap.conf
 
 ##COPY /conf/php-fpm.conf /etc/
-##COPY /conf/www.conf /etc/php-fpm.d/
-##COPY /conf/php.ini /etc/
+COPY /conf/www.conf /etc/php-fpm.d/
+COPY /conf/php.ini /etc/
 
 USER 1001
 
