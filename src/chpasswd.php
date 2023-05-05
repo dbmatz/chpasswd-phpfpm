@@ -133,7 +133,7 @@
   }
 
   function logs($username, $error){
-    /*date_default_timezone_set('America/Sao_Paulo');
+    date_default_timezone_set('America/Sao_Paulo');
     $date = date('Y-m-d H:i:s');
 
     $ip = $_SERVER['REMOTE_ADDR'];
@@ -141,11 +141,11 @@
     $arquivo = "logChpasswd.txt";
     $mensagem = "$date: $ip: $username: $error\n";
 
-    $open = fopen($arquivo, 'a');
+    /*$open = fopen($arquivo, 'a');
     fwrite($open, $mensagem);
-    fclose($open);
+    fclose($open);*/
 
-    file_put_contents("php://stderr", "$mensagem\n");*/
+    file_put_contents("php://stderr", "$mensagem\n");
 
     return 0;
   }
